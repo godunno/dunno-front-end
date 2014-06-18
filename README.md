@@ -17,4 +17,5 @@ Para gerar os arquivos HTML a partir dos arquivos Slim, execute:
 ```
 
 *Atenção! Os arquivos Slim devem ficar na pasta src/slim/*
+
 Os HTMLs resultantes estarão na pasta templates/
