@@ -45,7 +45,7 @@ While you're working on your project, run:
 `guard`
 
 Then you can start cooking *YOUR* recipe! When you're finished, just hit
-<kbd>Ctrl</kbd>+<kbd>C</kbd> on the terminal.
+<kbd>Ctrl</kbd>+<kbd>C</kbd> on the terminal to kill the guard (hehe).
 
 ## See your changes
 
