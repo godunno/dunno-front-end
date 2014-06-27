@@ -40,12 +40,16 @@ cd dunno-front-end
 bundle
 ```
 
-While you're working on your project, run:
+While you're working on your project, you'll need someone to watch your
+back (ok, actually the recipes you make with Slim 'n Sass, and compile
+them to boring HTML and CSS)! You need a watchman. You need a **guard**.
+Run:
 
 `guard`
 
-Then you can start cooking *YOUR* recipe! When you're finished, just hit
-<kbd>Ctrl</kbd>+<kbd>C</kbd> on the terminal to kill the guard (hehe).
+Now you can start cooking *YOUR* recipe! Get your hands dirty! When
+you're finished, just hit <kbd>Ctrl</kbd>+<kbd>C</kbd> on the terminal
+to kill the guard (hehe, see what I did there?).
 
 ## See your changes
 
@@ -98,6 +102,7 @@ CHECK. IT. OUT.
     Just run `git add .`!
   * `git commit -m "Just added pepper, now it's AWESOME"` - Send a
     message to your bros! It's a **MUST**! Seriously, you cannot commit
-    without a message, I've tried.
+    without a message, I've tried. Besides, you don't wanna be rude, DO
+    YOU?
   * `git push` - Put it on the fridge (a.k.a. Github) and wait to
     see them faces!
