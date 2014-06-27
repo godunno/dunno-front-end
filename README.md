@@ -1,21 +1,29 @@
-dunno-front-end
-===============
+# Foundation libsass template
 
-Para começar a usar o projeto:
+This is a template to start your own project that uses Grunt and libsass!
+
+## Requirements
+
+You'll need to have the following items installed before continuing.
+
+  * [Node.js](http://nodejs.org): Use the installer provided on the NodeJS website.
+  * [Grunt](http://gruntjs.com/): Run `[sudo] npm install -g grunt-cli`
+  * [Bower](http://bower.io): Run `[sudo] npm install -g bower`
+
+## Quickstart
+
 ```bash
-  git clone git@github.com:godunno/dunno-front-end.git
+git clone git@github.com:zurb/foundation-libsass-template.git
+npm install && bower install
 ```
 
-Em seguida, instale as dependências:
-```bash
-  bundle
-```
+While you're working on your project, run:
 
-Para gerar os arquivos HTML a partir dos arquivos Slim, execute:
-```bash
-  ./compile.rb
-```
+`grunt`
 
-*Atenção! Os arquivos Slim devem ficar na pasta src/slim/*
+And you're set!
 
-Os HTMLs resultantes estarão na pasta templates/
+## Directory Structure
+
+  * `scss/_settings.scss`: Foundation configuration settings go in here
+  * `scss/app.scss`: Application styles go here
