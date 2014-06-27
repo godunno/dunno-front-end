@@ -44,7 +44,8 @@ While you're working on your project, run:
 
 `guard`
 
-Then you can start cooking *YOUR* recipe!
+Then you can start cooking *YOUR* recipe! When you're finished, just hit
+<kbd>Ctrl</kbd>+<kbd>C</kbd> on the terminal.
 
 ## See your changes
 
@@ -57,6 +58,9 @@ Running `google-chrome public/index.html` will open a new tab with the
 file on the active Google Chrome window! Don't you use Chrome? Any
 browser works, even a hipster like Opera! Just spare a minute and search
 for the correct command.
+
+Also, do you know you can open new tabs on the terminal? On Ubuntu, hit
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>.
 
 ## Directory Structure
 
