@@ -69,8 +69,8 @@ Don't get lost while working on those dishes, keep your table clean!
 ### Sass
 
   * `sass/*`: Sass files go in here
-  * `sass/_settings.scss`: Foundation configuration settings go in here
-  * `sass/app.scss`: Application styles go here
+  * `sass/_settings.sass`: Foundation configuration settings go in here
+  * `sass/app.sass`: Application styles go here
 
 ### Slim
 
