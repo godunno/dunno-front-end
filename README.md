@@ -79,17 +79,18 @@ hit <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>.
 
 ## Be organized
 
-Don't get lost while working on those dishes, keep your table clean!
+Don't get lost while working on those dishes, keep your table clean! You
+should change only the files on the `src/` directory!
 
 ### Sass
 
-  * `sass/*`: Sass files go in here
-  * `sass/_settings.sass`: Foundation configuration settings go in here
-  * `sass/app.sass`: Application styles go here
+  * `src/sass/*`: Sass files go in here
+  * `src/sass/_settings.sass`: Foundation configuration settings go in here
+  * `src/sass/app.sass`: Application styles go here
 
 ### Slim
 
-  * `templates/*`: Slim files go in here
+  * `src/templates/*`: Slim files go in here
 
 ### Compiled files
 
