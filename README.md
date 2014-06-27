@@ -99,5 +99,5 @@ CHECK. IT. OUT.
   * `git commit -m "Just added pepper, now it's AWESOME"` - Send a
     message to your bros! It's a **MUST**! Seriously, you cannot commit
     without a message, I've tried.
-  * `git push` - Put it on the fridge (also known as Github) and wait to
+  * `git push` - Put it on the fridge (a.k.a. Github) and wait to
     see them faces!
