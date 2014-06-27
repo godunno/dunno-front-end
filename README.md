@@ -48,8 +48,8 @@ Run:
 `guard`
 
 Now you can start cooking *YOUR* recipe! Get your hands dirty! When
-you're finished, just hit <kbd>Ctrl</kbd>+<kbd>C</kbd> on the terminal
-to kill the guard (hehe, see what I did there?).
+you're finished, just type `exit` on the terminal and hit
+<kbd>Enter</kbd>.
 
 ## See your changes
 
