@@ -116,7 +116,7 @@ is how you link a page to another, you begin with a lasagna! And don't
 forget that you're linking to the HTML, not the Slim!
 
 For example, let's say you've put your piece of code on the path
-`src/templates/pizzas/pepperoni.slim` and you and to link to it. Do as I
+`src/templates/pizzas/pepperoni.slim` and you want a link to it. Do as I
 say, and pay attention to the `href`:
 
 ```slim
