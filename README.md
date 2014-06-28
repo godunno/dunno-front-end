@@ -90,7 +90,7 @@ html
         li Get some tortillas
         li Put a bowl of guacamole and chili beans on the table
         li Eat the sweet motherfuckers
-      a href="#" Cook some chimichangas too!
+      a href="#recipes/chimichangas.html" Cook some chimichangas too!
 ```
 
 This is **SO** boring. Forget about it, don't ever think about that
