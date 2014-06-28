@@ -66,7 +66,7 @@ you're finished, just type `exit` on the terminal and hit
 ### Taste your mix
 
 To taste the glorious piece of food you've just gave birth to, visit on
-your web browser the URL `localhost:8000` and begin the feast!
+your web browser the URL [http://localhost:8000](http://localhost:8000) and begin the feast!
 
 ## Tips for your recipes
 
@@ -82,7 +82,7 @@ nachos. You'd think you'd need to:
 doctype html
 html
   head
-    title Dunno App, the hottest, tastiest, best-smelling app ever made
+    title Dunno App: the hottest, tastiest, best-smelling app ever made
   body
     .row class="content"
       h1 Nachos da Mamacita
@@ -125,9 +125,9 @@ a href="#pizzas/pepperoni.html" A pepperoni for a jabroni
 
 In other words:
 
-  * Begin with a #
+  * Begin with a `#`
   * Put the path *relative* to the `src/templates` directory
-  * End with HTML, not Slim
+  * End with `.html`, not `.slim`
   * ???
   * PROFIT
 
