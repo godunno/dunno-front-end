@@ -110,7 +110,7 @@ Way better, huh?
 ### Mixing up
 
 Did you see the lasagna on the last example? Right there on the link,
-after the `href`. You know, the #. Some people call it number sign,
+after the `href`. You know, the `#`. Some people call it number sign,
 hashtag or even waffle, but I'm pretty sure it's a lasagna. Anyway, this
 is how you link a page to another, you begin with a lasagna! And don't
 forget that you're linking to the HTML, not the Slim!
@@ -168,7 +168,7 @@ CHECK. IT. OUT.
     Just run `git add .`!
   * `git commit -m "Just added pepper, now it's AWESOME"` - Send a
     message to your bros! It's a **MUST**! Seriously, you cannot commit
-    without a message, I've tried. Besides, you don't wanna be rude, DO
+    without a message. I've tried. Besides, you don't wanna be rude, DO
     YOU?
   * `git pull` - Before shoving your meal down the throats of your
     buddies, it would be nice to check if they've been preparing
