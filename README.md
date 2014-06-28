@@ -1,8 +1,9 @@
 # Dunno App Front-End
 
-Love Chips 'n Dips? This is **WAY** better! This is the front-end
-repository for the hottest, prettiest, tastiest app ever made, Dunno
-App! Wanna grab some delicious Slim 'n Sass? See how bellow!
+Love Chips 'n Dips? HOLD ONTO YOUR PANTS, this is way better! This is
+the front-end repository for the hottest, tastiest, best-smelling app
+ever made, Dunno App! Wanna grab some delicious Slim 'n Sass? You're in
+the right place!
 
 Don't know what the hell I'm talking about? Check it out!
 
@@ -64,18 +65,71 @@ you're finished, just type `exit` on the terminal and hit
 
 ### Taste your mix
 
-To taste the glorious piece of food you've just gave birth to, open the
-file `public/index.html` on the web browser and begin the feast!
+To taste the glorious piece of food you've just gave birth to, visit on
+your web browser the URL `localhost:8000` and begin the feast!
 
-If you're starting to love the smell of command line as much as I do,
-you probably are there already and don't wanna open the file explorer.
-Running `google-chrome public/index.html` will open a new tab with the
-file on the active Google Chrome window! Don't you use Chrome? Any
-browser works, even a hipster like Opera! Just spare a minute and search
-for the correct command.
+## Tips for your recipes
 
-Also, do you know you can open new tabs on the terminal? On Ubuntu, just
-hit <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>.
+Do it like a pro!
+
+### Piece of cake
+
+You don't need to repeat the layout code on every page, just put in
+there the piece you need. For example, let's say you wanna make some
+nachos. You'd think you'd need to:
+
+```slim
+doctype html
+html
+  head
+    title Dunno App, the hottest, tastiest, best-smelling app ever made
+  body
+    .row class="content"
+      h1 Nachos da Mamacita
+      ul
+        li Get some tortillas
+        li Put a bowl of guacamole and chili beans on the table
+        li Eat the sweet motherfuckers
+      a href="#" Cook some chimichangas too!
+```
+
+This is **SO** boring. Forget about it, don't ever think about that
+again. Check how a pro do it:
+
+```slim
+h1 Nachos da Mamacita
+ul
+  li Get some tortillas
+  li Put a bowl of guacamole and chili beans on the table
+  li Eat the sweet motherfuckers
+a href="#recipes/chimichangas.html" Cook some chimichangas too!
+```
+
+Way better, huh?
+
+### Mixing up
+
+Did you see the lasagna on the last example? Right there on the link,
+after the `href`. You know, the #. Some people call it number sign,
+hashtag or even waffle, but I'm pretty sure it's a lasagna. Anyway, this
+is how you link a page to another, you begin with a lasagna! And don't
+forget that you're linking to the HTML, not the Slim!
+
+For example, let's say you've put your piece of code on the path
+`src/templates/pizzas/pepperoni.slim` and you and to link to it. Do as I
+say, and pay attention to the `href`:
+
+```slim
+a href="#pizzas/pepperoni.html" A pepperoni for a jabroni
+```
+
+In other words:
+
+  * Begin with a #
+  * Put the path *relative* to the `src/templates` directory
+  * End with HTML, not Slim
+  * ???
+  * PROFIT
 
 ## Be organized
 
