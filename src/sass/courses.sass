@@ -1,9 +1,34 @@
 
-.class
+$course-card-width: 470px
+$course-card-title-height: 80px
+$course-card-events-height: 310px
+
+.courses
+  padding: 0 70px
+
+.course
   &.scheme-1 .title
     background: #FEDD59
+
   .title
-    width: 470px
-    height: 80px
+    width: $course-card-width
+    height: $course-card-title-height
+    padding-top: 15px
+    padding-left: 20px
+
+  .subtitle
+    color: #B19B40
+    font-size: 0.9rem
+
   h1
+    font-weight: bold
+    font-size: 1.5rem
+    line-height: 1.5rem
+    margin-bottom: 0
+
+  h1, .events
     text-transform: uppercase
+
+  .events
+    width: $course-card-width
+    height: $course-card-events-height
