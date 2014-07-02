@@ -7,8 +7,16 @@ $course-card-events-height: 310px
   padding: 0 70px
 
 .course
+
+  // Scheme colors
   &.scheme-1 .title
     background: #FEDD59
+    .subtitle
+      color: #B19B40
+  &.scheme-2 .title
+    background: #54C5FF
+    .subtitle
+      color: #437E9B
 
   .title
     width: $course-card-width
@@ -17,7 +25,6 @@ $course-card-events-height: 310px
     padding-left: 20px
 
   .subtitle
-    color: #B19B40
     font-size: 0.9rem
 
   h1
@@ -32,3 +39,8 @@ $course-card-events-height: 310px
   .events
     width: $course-card-width
     height: $course-card-events-height
+    background: white
+    table
+      width: 100%
+      td
+        height: $course-card-events-height/6
