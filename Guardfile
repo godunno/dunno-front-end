@@ -6,7 +6,22 @@ guard 'sass', :all_on_start => true, :input => 'bower_components/foundation/scss
   watch(%r{^src/sass/.+(\.sass)$})
 end
 
-guard "slim", :all_on_start => true, output: '../public' do
+class RoutesContext
+  def initialize(template)
+  end
+
+  def routes
+    files = `find src/templates -name \*.slim -print`.split
+    files.delete("src/templates/index.slim")
+    paths = files.map do |file|
+      file.sub(%r{^src/templates/}, '').
+        sub(/slim$/, 'html')
+    end
+    JSON.generate(paths)
+  end
+end
+
+guard "slim", context: RoutesContext, :all_on_start => true, output: '../public' do
   watch(%r{^src/templates/.+(\.slim)$})
 end
 
@@ -15,19 +30,6 @@ guard :shell, :all_on_start => true do
     `[ ! -d public/js ] && mkdir -p public/js`
     `cp -r bower_components/* public/js`
   end
-
-  watch(%r{^src/templates/.*}) do |m|
-    files = `find src/templates -name \*.slim -print`.split
-    files.delete("src/templates/index.slim")
-    paths = files.map do |file|
-      file.sub(%r{^src/templates/}, '').
-        sub(/slim$/, 'html')
-    end
-    File.open('public/routes.json', 'w') do |f|
-      f << JSON.generate(routes: paths)
-    end
-  end
-
 end
 
 guard 'process', :name => 'server', :command => 'ruby server.rb', :stop_signal => "KILL"  do
