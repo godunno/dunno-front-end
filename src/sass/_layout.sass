@@ -1,13 +1,16 @@
 @import shared/placeholders
 
 $page-title-height: 110px
+$font: 'Lato', sans-serif
+
+//*
+//  font-family: $font
 
 .top-bar
   padding-left: 50px
 
 .page-title
   background: white
-  text-align: center
   height: $page-title-height
   margin-bottom: 40px
 
@@ -17,3 +20,6 @@ $page-title-height: 110px
   h1
     @extend %vertical-center
     text-transform: uppercase
+    text-align: center
+    width: 500px
+    margin: 0 auto
