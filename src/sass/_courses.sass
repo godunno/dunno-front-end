@@ -42,8 +42,6 @@ li.course
     font-size: 1.5rem
     line-height: 1.5rem
     margin-bottom: 0
-
-  h1, .events
     text-transform: uppercase
 
   .events
@@ -60,3 +58,10 @@ li.course
           border-bottom: 0
       td
         height: $course-card-events-height/6 - 1
+        font-weight: bold
+        &:nth-child(5)
+          color: #AAA
+        &:nth-child(n+5)
+          font-weight: normal
+        &:nth-child(-n+5)
+          text-transform: uppercase
