@@ -2,12 +2,12 @@
 $course-card-width: 470px
 $course-card-title-height: 80px
 $course-card-events-height: 310px
+$course-card-border: solid 1px #dddddd
 
 .courses
   padding: 0 70px
 
 .course
-
   // Scheme colors
   &.scheme-1 .title
     background: #FEDD59
@@ -19,6 +19,7 @@ $course-card-events-height: 310px
       color: #437E9B
 
   .title
+    @include side-radius(top)
     width: $course-card-width
     height: $course-card-title-height
     padding-top: 15px
@@ -28,7 +29,6 @@ $course-card-events-height: 310px
     font-size: 0.9rem
 
   h1
-    font-weight: bold
     font-size: 1.5rem
     line-height: 1.5rem
     margin-bottom: 0
@@ -37,10 +37,16 @@ $course-card-events-height: 310px
     text-transform: uppercase
 
   .events
+    @include side-radius(bottom)
+    border: $course-card-border
     width: $course-card-width
     height: $course-card-events-height
     background: white
     table
       width: 100%
+      tr
+        border-bottom: $course-card-border
+        &:nth-child(6)
+          border-bottom: 0
       td
         height: $course-card-events-height/6
