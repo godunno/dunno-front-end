@@ -1,14 +1,31 @@
+//CORES
+//Dunno grey
+$primary-color: #2B3738
+
+//Dunno green
+$secondary-color: #1cc678
+
+$red-color: #ff5950
+$yellow-color: #fedd59
+$blue-color: #54c5ff
+$orange-color: #ff926a
+$purple-color: #a893ff
+$brown-color: #d18c66
+
+$inactive-color: #c5c5c5
 
 .btn-header-left
-  @extend %vertical-center
-  float: left
-  margin-left: 70px
+	@extend %vertical-center
+	float: left
+	margin-left: 70px
 
 .btn-style-1
-  padding: 0 36px
-  height: 38px
-  line-height: 38px
-  background-color: #1CC678
+	padding: 0 36px
+	height: 38px
+	line-height: 38px
+	background-color: #1CC678
 
-  &:active, &:hover
-    background-color: #149E5F
+	&:active, &:hover
+		background-color: #149E5F
+	&.inactive
+		bg-color: $inactive-color
