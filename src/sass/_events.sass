@@ -5,65 +5,65 @@ $event-card-notes-height: 320px
 $event-card-border: solid 1px #dddddd
 
 .event-card
-	padding: 0 70px
+  padding: 0 70px
 
 li.event
-	padding-bottom: 42px
-	.title
-		@include side-radius(top)
-		width: $event-card-width
-		height: $event-card-title-height
-		padding-top: 15px
-		text-align: center
+  padding-bottom: 42px
+  .title
+    @include side-radius(top)
+    width: $event-card-width
+    height: $event-card-title-height
+    padding-top: 15px
+    text-align: center
 
-	.subtitle
-		font-size: 0.8rem
+  .subtitle
+    font-size: 0.8rem
 
-	h1
-		font-size: 1.4rem
-		line-height: 1.5rem
-		margin-bottom: 0
-		text-transform: uppercase
+  h1
+    font-size: 1.4rem
+    line-height: 1.5rem
+    margin-bottom: 0
+    text-transform: uppercase
 
-	.status
-		height: 50px
-		border-top: 1px solid
-		width: $event-card-width
-		text-transform: uppercase
-		padding: 0 20px
-		
+  .status
+    height: 50px
+    border-top-width: 1px
+    border-top-style: solid
+    width: $event-card-width
+    text-transform: uppercase
+    padding: 0 20px
 
-	.class
-		font-size: 0.7rem
-		line-height: 0.7rem
-		position: relative
-		top: 10px
+  .class
+    font-size: 0.7rem
+    line-height: 0.7rem
+    position: relative
+    top: 10px
 
-	.notes
-		@include side-radius(bottom)
-		width: $event-card-width
-		height: $event-card-notes-height
-		background: white
-		border: $course-card-border
-		padding: 20px 40px 10px 10px
+  .notes
+    @include side-radius(bottom)
+    width: $event-card-width
+    height: $event-card-notes-height
+    background: white
+    border: $course-card-border
+    padding: 20px 40px 10px 10px
 
 
-	ul
-		list-style-type: none
-		font-size: 0.75rem
-		line-height: 1rem
-		font-weight: light
+  ul
+    list-style-type: none
+    font-size: 0.75rem
+    line-height: 1rem
+    font-weight: light
 
-		li
-			margin-bottom: 10px
-			color: $primary-color
+    li
+      margin-bottom: 10px
+      color: $primary-color
 
-	.timer 
-		height: 20px
-		padding: 2px 5px
-		background: black
-		color: white
-		font-size: 0.7rem
-		float: right
-		margin-left: 5px
-		@extend %vertical-center
+  .timer
+    height: 20px
+    padding: 2px 5px
+    background: black
+    color: white
+    font-size: 0.7rem
+    float: right
+    margin-left: 5px
+    @extend %vertical-center
