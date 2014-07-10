@@ -1,0 +1,67 @@
+header.page-title
+  .row
+    .large-4.large-centered.vertical-center.columns
+      h1 Styleguide
+
+.row
+  h2 Buttons
+
+  a class="button radius btn-header-left btn-style-1" Style 1
+
+.row
+  h2 Cards and Schemes
+
+.row
+  h3 Course card
+  ul.courses.large-block-grid-2
+
+    li.card.course
+      .scheme-1.title
+        h1 Tr230
+        span.subtitle Colégio Anchieta - 2ª série
+      .events
+        table
+          tr ng-repeat="i in [1,2,3,4,5,6]"
+            td icon
+            td 03
+            td Português
+            td 10 mai
+            td seg
+            td 10h - 12h
+
+.row
+  h3 Course color schemes
+
+  ul.large-block-grid-2
+    li.course.card
+      .scheme-1.title
+        h1 Scheme 1 - Title
+        span.subtitle Subtitle
+    li.course.card
+      .scheme-2.title
+        h1 Scheme 2 - Title
+        span.subtitle Subtitle
+    li.course.card
+      .scheme-3.title
+        h1 Scheme 3 - Title
+        span.subtitle Subtitle
+    li.course.card
+      .scheme-4.title
+        h1 Scheme 4 - Title
+        span.subtitle Subtitle
+
+.row
+  h3 Event card
+  ul.events.large-block-grid-3
+
+		li.card.event
+			.title.scheme-1
+				h1 Tr230
+				span.subtitle Colégio Anchieta - 2ª série
+			.status.scheme-1 
+				span.course Portugues
+				a class="button radius timer" 0:30
+				a class="button radius timer" 0:30
+			.notes
+				ul.note ng-repeat="i in [1,2,3,4,5,6]"
+					li ICONE Lorem ipsum dolor sit amet kolor mat vaan dark
