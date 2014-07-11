@@ -28,20 +28,28 @@ html.no-js lang="en" ng-app="DunnoApp"
           li
             a href="#styleguide.html" Styleguide
 
-    .content ng-view=""
+    .content ng-controller="MainCtrl" ng-view=""
 
     script src="js/jquery/dist/jquery.min.js"
     script src="js/foundation/js/foundation.min.js"
+    script src="js/foundation/js/foundation/foundation.magellan.js"
     script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.js"
     script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular-route.js"></script>
+    script src="js/angular-scroll/angular-scroll.min.js"
     javascript:
       $(document).foundation();
       routes = #{{routes}};
-      angular.module('DunnoApp', ['ngRoute'])
+      angular.module('DunnoApp', ['ngRoute', 'duScroll'])
       .config(['$routeProvider', function($routeProvider){
         for(var i = 0; i < routes.length; i++) {
           $routeProvider.when('/' + routes[i], {templateUrl: routes[i]});
         }
         $routeProvider.otherwise({redirectTo: '/courses.html'});
+      }])
+      .controller('MainCtrl', ['$scope', '$document', function($scope, $document){
+        $scope.$on('$viewContentLoaded', function () {
+          $(document).foundation();
+          console.log("WTF");
+        });
       }]);
 
