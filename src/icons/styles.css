@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "dunno-icon-font";
+  src:url("fonts/dunno-icon-font.eot");
+  src:url("fonts/dunno-icon-font.eot?#iefix") format("embedded-opentype"),
+    url("fonts/dunno-icon-font.woff") format("woff"),
+    url("fonts/dunno-icon-font.ttf") format("truetype"),
+    url("fonts/dunno-icon-font.svg#dunno-icon-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "dunno-icon-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "dunno-icon-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-note:before {
+  content: "a";
+}
+.icon-graph:before {
+  content: "b";
+}
+.icon-arrow-left:before {
+  content: "c";
+}
+.icon-arrow-circle-left:before {
+  content: "e";
+}
+.icon-notification:before {
+  content: "l";
+}
+.icon-mail:before {
+  content: "m";
+}
+.icon-search-files:before {
+  content: "n";
+}
+.icon-play-circle:before {
+  content: "o";
+}
+.icon-thermometer:before {
+  content: "p";
+}
+.icon-not-ok:before {
+  content: "q";
+}
+.icon-play:before {
+  content: "r";
+}
+.icon-unlock:before {
+  content: "s";
+}
+.icon-lock:before {
+  content: "t";
+}
+.icon-video:before {
+  content: "u";
+}
+.icon-ok:before {
+  content: "v";
+}
+.icon-boy:before {
+  content: "w";
+}
+.icon-close:before {
+  content: "x";
+}
+.icon-attach:before {
+  content: "y";
+}
+.icon-edition:before {
+  content: "z";
+}
+.icon-add:before {
+  content: "A";
+}
+.icon-user-uncheck:before {
+  content: "B";
+}
+.icon-user-check:before {
+  content: "C";
+}
+.icon-transfer:before {
+  content: "D";
+}
+.icon-search:before {
+  content: "E";
+}
+.icon-eye:before {
+  content: "F";
+}
+.icon-quiz:before {
+  content: "G";
+}
+.icon-users:before {
+  content: "H";
+}
+.icon-triangle:before {
+  content: "I";
+}
+.icon-files-add:before {
+  content: "J";
+}
+.icon-dunno-logo:before {
+  content: "K";
+}
+.icon-tasks:before {
+  content: "L";
+}
+.icon-doc-circle:before {
+  content: "M";
+}
+.icon-clock:before {
+  content: "N";
+}
+.icon-calendar:before {
+  content: "O";
+}
+.icon-doc-check:before {
+  content: "P";
+}
+.icon-cards:before {
+  content: "Q";
+}
+.icon-chat-2:before {
+  content: "R";
+}
+.icon-doc-lock:before {
+  content: "S";
+}
+.icon-lists:before {
+  content: "T";
+}
+.icon-strip:before {
+  content: "U";
+}
+.icon-docs:before {
+  content: "V";
+}
+.icon-chat:before {
+  content: "W";
+}
+.icon-support:before {
+  content: "X";
+}
+.icon-doc:before {
+  content: "Y";
+}
+.icon-check:before {
+  content: "Z";
+}
+.icon-arrow-circle-right:before {
+  content: "0";
+}
+.icon-arrow-back-left:before {
+  content: "i";
+}
+.icon-circle-small:before {
+  content: "d";
+}
+.icon-circle-small-1:before {
+  content: "f";
+}
+.icon-circle-big-outline:before {
+  content: "g";
+}
+.icon-circle-big:before {
+  content: "h";
+}
