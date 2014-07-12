@@ -1,0 +1,62 @@
+header.page-title.scheme-1
+  .row
+    .large-3.columns.vertical-center
+      a class="button radius btn-header-left btn-style-1"
+        span.icon-arrow-back
+        Ver todas as aulas
+    .large-4.large-centered.vertical-center.columns
+      h1 TR230 
+      span.subtitle Colégio Anchieta - 2ª série
+.row      
+  .event-carousel
+    a class="icon-arrow-circle-left arrow-left vertical-center" 
+    a class="icon-arrow-circle-right arrow-right vertical-center" 
+    h1.vertical-center Aula 4
+
+.row.card
+  .container
+    .title.diary-label
+      h1 Diário
+      .span.subtitle Tarefas visíveis para os alunos
+
+    .container-body
+      table
+        tr
+          td 
+            input type="checkbox" class="task-checkbox" 
+            label Revisar temas de casa
+            .task-box 
+              span.icon-quiz
+              Pergunta para a primeira enquente
+              a class="icon-trash task-icon-right"
+              a class="icon-eye task-icon-right"
+        tr 
+          td 
+            input type="checkbox" 
+            label Revisar temas de casa
+      .container-foot
+        input type="text"
+        label Ex: fazendo ditado
+
+.row.card
+  .container
+    .title.notes-label
+      span.icon-lock 
+      span Anotações
+      .span.subtitle Tarefas visíveis para os alunos
+
+    .container-body
+      table
+        tr
+          td 
+            input type="checkbox" 
+            label Revisar temas de casa
+            .task-box Pergunta para a primeira enquente
+
+        tr ng-repeat="i in [1,2,3,4,5,6]"
+          td 
+            input type="checkbox" 
+            label Revisar temas de casa
+      .container-foot
+        input type="text"
+        label Ex: fazendo ditado

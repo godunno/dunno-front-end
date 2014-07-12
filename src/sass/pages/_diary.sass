@@ -1,0 +1,80 @@
+$diary-container-width: 800px
+$diary-title-height: 90px
+$diary-card-border: solid 1px #dddddd
+
+
+.event-carousel
+  border: 1px solid $primary-color
+  border-radius: $global-radius
+  height: 70px
+  margin: 0 auto
+  width: $diary-container-width
+  padding: 0 20px
+    
+  h1
+    font-size: 1.5rem
+    color: $primary-color
+    text-align: center
+    text-transform: uppercase
+
+  .arrow-left
+    float: left
+
+  .arrow-right
+    float: right
+
+.container
+  width: $diary-container-width
+  background: white
+  border: $diary-card-border
+  margin: 20px auto 0
+  padding: 0
+
+  .title
+    height: $diary-title-height
+    position: relative
+    border-left-width: 10px
+    border-left-style: solid
+
+  .diary-label
+    border-left-color: #1cc678
+
+  .notes-label
+    border-left-color: #ff5950
+
+  h1
+    font-size: 1.2rem
+    text-transform: uppercase
+    font-weight: bold
+    margin-top: 0
+
+.subtitle
+  font-size: 0.7rem
+
+.container-body
+  border-top: 1px solid black
+  padding: 0 20px
+  table
+    width: 100%
+    margin: 0 auto
+    tr
+      height: 50px
+      border-bottom: $diary-card-border
+
+.task-box
+  height: 50px
+  margin: 0 auto
+  background: #ddd
+  border-radius: $global-radius
+  padding: 10px
+
+.task-checkbox
+  border: 2px solid black
+
+.task-icon-right
+  font-size: 1.5rem
+  color: #bbb
+  float: right
+  position: relative
+  margin-left: 8px
+  @extend .vertical-center
