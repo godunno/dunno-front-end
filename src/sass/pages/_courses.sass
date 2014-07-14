@@ -16,6 +16,12 @@ li.course
   .subtitle
     font-size: 0.8rem
 
+  .icon-arrow-right
+    float: right
+    font-size: rem-calc(30)
+    line-height: rem-calc(30)
+    margin-right: 10px
+
   h1
     font-size: 1.4rem
     line-height: 1.5rem
@@ -27,19 +33,25 @@ li.course
     width: $course-card-width
     height: $course-card-events-height
     background: white
-    table
-      width: 100%
-      tr
-        border-bottom: $course-card-border
-        &:nth-child(6)
-          border-bottom: 0
-      td
-        height: $course-card-events-height/6 - 1
-        font-weight: bold
-        font-size: 0.8rem
-        &:nth-child(5)
-          color: #AAA
-        &:nth-child(n+5)
-          font-weight: normal
-        &:nth-child(-n+5)
-          text-transform: uppercase
+    .row
+      margin: 0
+      height: $course-card-events-height/6 - 1
+      border-bottom: $course-card-border
+      &:nth-of-type(6)
+        border-bottom: 0
+    .columns
+      @extend .vertical-center
+      font-weight: bold
+      font-size: 0.8rem
+      &:nth-of-type(5)
+        color: #AAA
+      &:nth-of-type(n+5)
+        font-weight: normal
+      &:nth-of-type(-n+5)
+        text-transform: uppercase
+
+.overlay.published
+  background-color: $primary-color
+  opacity: 0.9
+  text-align: center
+  text-transform: uppercase

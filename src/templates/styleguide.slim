@@ -14,11 +14,22 @@ header.page-title
         a du-smooth-scroll='' href="#course-color-schemes" Course color schemes
       dd du-scrollspy="event-card"
         a du-smooth-scroll='' href="#event-card" Event card
+
   .large-8.columns
     .row
       h2 id="buttons" Buttons
 
-      a class="button radius btn-header-left btn-style-1" Style 1
+      ul.large-block-grid-2.text-center
+        li
+          a class="button radius btn-style-1" style-1
+        li
+          a class="button radius btn-style-1 inactive" style-1 inactive
+        li
+          .scheme-1 style="padding: 20px;"
+            a class="button radius btn-style-transparent-1" style-transparent-1
+        li
+          .scheme-1 style="padding: 20px;"
+            a class="button radius btn-style-transparent-2" style-transparent-2
 
     .row
       h2 Cards and Schemes
@@ -30,16 +41,17 @@ header.page-title
         li.card.course
           .scheme-1.title
             h1 Tr230
-            span.subtitle Colégio Anchieta - 2ª série
+            span.subtitle.secondary-color Colégio Anchieta - 2ª série
           .events
-            table
-              tr ng-repeat="i in [1,2,3,4,5,6]"
-                td icon
-                td 03
-                td Português
-                td 10 mai
-                td seg
-                td 10h - 12h
+            .row.has-overlay ng-repeat="i in [1,2,3,4,5,6]"
+              a.overlay.published.hide href="#/courses.html"
+                .button.btn-style-transparent-1.radius.vertical-center ver diário
+              .large-1.columns icon
+              .large-1.columns 03
+              .large-4.columns Português
+              .large-2.columns 10 mai
+              .large-1.columns seg
+              .large-3.columns 10h - 12h
 
     .row
       h3 id="course-color-schemes" Course color schemes
@@ -48,19 +60,19 @@ header.page-title
         li.course.card
           .scheme-1.title
             h1 Scheme 1 - Title
-            span.subtitle Subtitle
+            span.subtitle.secondary-color Subtitle
         li.course.card
           .scheme-2.title
             h1 Scheme 2 - Title
-            span.subtitle Subtitle
+            span.subtitle.secondary-color Subtitle
         li.course.card
           .scheme-3.title
             h1 Scheme 3 - Title
-            span.subtitle Subtitle
+            span.subtitle.secondary-color Subtitle
         li.course.card
           .scheme-4.title
             h1 Scheme 4 - Title
-            span.subtitle Subtitle
+            span.subtitle.secondary-color Subtitle
 
     .row
       h3 id="event-card" Event card
@@ -69,7 +81,7 @@ header.page-title
         li.card.event
           .title.scheme-1
             h1 Tr230
-            span.subtitle Colégio Anchieta - 2ª série
+            span.subtitle.secondary-color Colégio Anchieta - 2ª série
           .status.scheme-1 
             span.course Portugues
             a class="button radius timer" 0:30
