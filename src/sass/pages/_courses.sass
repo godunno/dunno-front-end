@@ -21,6 +21,7 @@ li.course
     float: right
     font-size: $course-card-arrow-size
     line-height: $course-card-arrow-size
+    height: $course-card-arrow-size
     margin-right: 10px
 
   h1
@@ -44,6 +45,10 @@ li.course
       @extend .vertical-center
       font-weight: bold
       font-size: 0.8rem
+      &:nth-of-type(3)
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
       &:nth-of-type(5)
         color: #AAA
       &:nth-of-type(n+5)

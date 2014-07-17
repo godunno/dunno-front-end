@@ -37,22 +37,27 @@ header.page-title
     .row
       h3 id="course-card" Course card
       ul.courses.large-block-grid-2
-
         li.card.course
-          .scheme-1.title
-            h1 Tr230
-            span.subtitle.secondary-color Colégio Anchieta - 2ª série
+          div ng-class="'title scheme-' + klass.order"
+            h1 {{klass.name}}
+            span.subtitle.secondary-color {{klass.location}}
             i.icons.icon-arrow-open.secondary-color.vertical-center
           .events
-            .row.has-overlay ng-repeat="i in [1,2,3,4,5,6]"
-              a.overlay.published.hide href="#/courses.html"
+            .row.has-overlay ng-repeat="event in klass.events | limitTo: 6"
+              a.overlay.published.hide href="#/courses.html" ng-if="klass.published"
                 .button.btn-style-transparent-1.radius.vertical-center ver diário
               .large-1.columns icon
-              .large-1.columns 03
-              .large-4.columns Português
-              .large-2.columns 10 mai
-              .large-1.columns seg
-              .large-3.columns 10h - 12h
+              .large-1.columns {{event.order}}
+              .large-4.columns {{event.name}}
+              .large-2.columns
+                | {{event.start_at | date: 'dd MMM'}}
+                / 01 Jan
+              .large-1.columns
+                | {{event.start_at | date: 'EEE'}}
+                / Mon
+              .large-3.columns
+                | {{event.start_at | date: 'HH:mm'}} - {{event.end_at | date: 'HH:mm'}}
+                / 14:00 - 16:00
 
     .row
       h3 id="course-color-schemes" Course color schemes
@@ -80,13 +85,13 @@ header.page-title
       ul.events.large-block-grid-3
 
         li.card.event
-          .title.scheme-1
-            h1 Tr230
-            span.subtitle.secondary-color Colégio Anchieta - 2ª série
-          .status.scheme-1 
-            span.course Portugues
-            a class="button radius timer" 0:30
-            a class="button radius timer" 0:30
+          div ng-class="'title scheme-' + event.klass.order"
+            h1 {{event.klass.name}}
+            span.subtitle.secondary-color {{event.klass.location}}
+          div ng-class="'status scheme-' + event.klass.order"
+            .row.vertical-center
+              .large-9.columns.course {{event.name}}
+              .large-3.columns: a class="button radius timer" 0:30
           .notes
-            ul.note ng-repeat="i in [1,2,3,4,5,6]"
-              li ICONE Lorem ipsum dolor sit amet kolor mat vaan dark
+            ul.note
+              li ng-repeat="task in event.tasks" {{task}}

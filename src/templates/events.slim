@@ -1,44 +1,19 @@
 header.page-title
   .row
-    .large-3.columns.vertical-center
-      a href="#/diary.html" class="button radius btn-style-1" Planejar nova aula
     .large-4.large-centered.vertical-center.columns
       h1 Aulas
 .row
-	ul.events.large-block-grid-3
+  ul.events.large-block-grid-3
 
-		li.card.event
-			.title.scheme-1
-				h1 Tr230
-				span.subtitle.secondary-color Colégio Anchieta - 2ª série
-			.status.scheme-1 
-				span.course Portugues
-				a class="button radius timer" 0:30
-				a class="button radius timer" 0:30
-			.notes
-				ul.note ng-repeat="i in [1,2,3,4,5,6]"
-					li ICONE Lorem ipsum dolor sit amet kolor mat vaan dark
+    li.card.event ng-repeat="event in events"
+      div ng-class="'title scheme-' + event.klass.order"
+        h1 {{event.klass.name}}
+        span.subtitle.secondary-color {{event.klass.location}}
+      div ng-class="'status scheme-' + event.klass.order"
+        .row.vertical-center
+          .large-9.columns.course {{event.name}}
+          .large-3.columns: a class="button radius timer" 0:30
+      .notes
+        ul.note
+          li ng-repeat="task in event.tasks" {{task}}
 
-		li.card.event
-			.title.scheme-2
-				h1 Tr230
-				span.subtitle.secondary-color Colégio Anchieta - 2ª série
-			.status.scheme-2
-				span.course Portugues
-				a class="button radius timer" 0:30
-				a class="button radius timer" 0:30
-			.notes
-				ul.note ng-repeat="i in [1,2,3,4,5,6]"
-					li ICONE Lorem ipsum dolor sit amet kolor mat vaan dark
-
-		li.card.event
-			.title.scheme-3
-				h1 Tr230
-				span.subtitle.secondary-color Colégio Anchieta - 2ª série
-			.status.scheme-3
-				span.course Portugues
-				a class="button radius timer" 0:30
-				a class="button radius timer" 0:30
-			.notes
-				ul.note ng-repeat="i in [1,2,3,4,5,6]"
-					li ICONE Lorem ipsum dolor sit amet kolor mat vaan dark					

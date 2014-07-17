@@ -1,6 +1,7 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 require 'json'
+require 'slim'
 
 guard 'sass', :all_on_start => true, :input => 'bower_components/foundation/scss', :output => 'public/css' do
   watch(%r{^src/sass/.+(\.sass)$})
@@ -8,6 +9,11 @@ end
 
 class RoutesContext
   def initialize(template)
+    ::Slim::Engine.set_default_options :attr_delims => {'(' => ')', '[' => ']'}
+  end
+
+  def publish?
+    !!ENV["PUBLISH"]
   end
 
   def routes
