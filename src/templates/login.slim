@@ -3,20 +3,25 @@
   img src="/images/dunno-logo.png"
 
   .login-container
-    .row    
-      .large-4.columns
-        label EMAIL
-        input type="text"
-      .large-4.columns
-        label SENHA
-        input type="text"
-        label Esqueci minha senha
-      .large-4.columns
-        button ENVIAR
-  
+    .email
+      label EMAIL
+      input.radius type="text"
+
+    .password
+      label SENHA
+      input.radius type="password"
+      span.help Esqueci minha senha
+      
+    .submit
+      input.button.radius.btn-style-1 type="submit" value="ENVIAR"
+      
   ul.login-links
-    li Home
+    li 
+      a href="#" Home
     li.sep |
-    li Termos de Uso
+    li 
+      a href="#" Termos de Uso
     li.sep |
-    li Política de Privacidade
+    li 
+      a href="#" Política de Privacidade
+     

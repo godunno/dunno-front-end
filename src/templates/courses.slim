@@ -1,31 +1,35 @@
 / test
 header.page-title
   .row
+    .large-4.vertical-center.columns style="float: left"
+      button.radius.btn-style-1 Criar nova disciplina
     .large-4.large-centered.vertical-center.columns
-      h1 Turmas
+      h1 Disciplinas
 
-.row
-  ul.courses.large-block-grid-2
+.courses-page
 
-    li.card.course ng-repeat="klass in klasses"
-      div ng-class="'title scheme-' + klass.order"
-        h1 {{klass.name}}
-        span.subtitle.secondary-color {{klass.location}}
-        i.icons.icon-arrow-open.secondary-color.vertical-center
-      .events
-        .row.has-overlay ng-repeat="event in klass.events | limitTo: 6"
-          a.overlay.published.hide href="#/courses.html" ng-if="klass.published"
-            .button.btn-style-transparent-1.radius.vertical-center ver diário
-          .large-1.columns icon
-          .large-1.columns {{event.order}}
-          .large-4.columns {{event.name}}
-          .large-2.columns
-            | {{event.start_at | date: 'dd MMM'}}
-            / 01 Jan
-          .large-1.columns
-            | {{event.start_at | date: 'EEE'}}
-            / Mon
-          .large-3.columns
-            | {{event.start_at | date: 'HH:mm'}} - {{event.end_at | date: 'HH:mm'}}
-            / 14:00 - 16:00
+  .row
+
+    ul.courses
+      li.course-card.has-overlay ng-repeat="course in courses"
+        a.overlay.published.hide href="#/courses.html"
+          .button.btn-style-transparent-1.radius.vertical-center ver disciplina
+        div ng-class="'title scheme-' + course.order"
+          h2 {{course.course}}
+          .subtitle
+            span {{course.name}}
+            span.right {{course.location}} - {{course.department}} - {{course.room}}
+
+        .content
+          div
+            .period
+              img src="/images/calendar.png"
+              span {{course.period}}
+            .students
+              img src="/images/students.png"
+              span {{course.students}} Alunos
+          .dates
+            ul
+              li ng-repeat="date in course.dates"
+                span {{date}}
 
