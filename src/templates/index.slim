@@ -23,18 +23,30 @@ html.no-js lang="en" ng-app="DunnoApp"
           li
             a href="#/courses.html" Turmas
           - if !publish?
+            //li
+            //  a href="#content.html" Calendário
+            //li
+            //  a href="#content.html" Tarefas
+            //li
+			      //  a href="#login.html" Login
+            //li
+            //  a href="#course_detail.html" Turma (detalhe)
+            //li
+            //  a href="#create_course.html" Criar disciplina 
+            //li
+            //  a href="#diary.html" Diário
             li
-              a href="#content.html" Calendário
+              a href="#aluno_2.html" Aluno-2
             li
-              a href="#content.html" Tarefas
+              a href="#aluno_3.html" Aluno-3
             li
-			        a href="#login.html" Login
+              a href="#aluno_4.html" Aluno-4
             li
-              a href="#course_detail.html" Turma (detalhe)
+              a href="#aluno_5.html" Aluno-5
             li
-              a href="#create_course.html" Criar disciplina 
+              a href="#aluno_6.html" Aluno-6
             li
-              a href="#diary.html" Diário
+              a href="#aluno_7.html" Aluno-7
             li
               a href="#styleguide.html" Styleguide
 
@@ -202,6 +214,19 @@ html.no-js lang="en" ng-app="DunnoApp"
         ];
         $scope.courses = courses;
 
+        // turmas cadastradas
+        
+        student_courses = [
+          { title: "Introdução à Arquitetura", info: "TR230 - SL2020", code: "PUCRS", teacher: "Prof. Juliano da Silva" },
+          { title: "Tópicos de Estruturas", info: "TR230 - SL2020", code: "PUCRS", teacher: "Prof. Juliano da Silva" },
+          { title: "Projeto III", info: "TR230 - SL2020", code: "PUCRS", teacher: "Prof. Juliano da Silva" },
+          { title: "Geometria Descritiva", info: "TR230 - SL2020", code: "PUCRS", teacher: "Prof. Juliano da Silva" },
+          { title: "Introdução à Arquitetura", info: "TR230 - SL2020", code: "PUCRS", teacher: "Prof. Juliano da Silva" },
+          { title: "Tópicos de Estruturas", info: "TR230 - SL2020", code: "PUCRS", teacher: "Prof. Juliano da Silva" },
+          { title: "Projeto III", info: "TR230 - SL2020", code: "PUCRS", teacher: "Prof. Juliano da Silva" },
+          { title: "Geometria Descritiva", info: "TR230 - SL2020", code: "PUCRS", teacher: "Prof. Juliano da Silva" },
+        ];
+        $scope.student_courses = student_courses;
         
       }]);
 

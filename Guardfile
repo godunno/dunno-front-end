@@ -34,8 +34,8 @@ end
 guard :shell, :all_on_start => true do
   watch(%r{^src/.*}) do |m|
     `[ ! -d public/js ] && mkdir -p public/js`
-    `cp -r bower_components/* public/js`
-    `cp -r src/fonts/* public/fonts`
+    `cp -R bower_components/* public/js`
+    `cp -R src/fonts/* public/fonts`
   end
 end
 
